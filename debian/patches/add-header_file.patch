@@ -1,0 +1,12 @@
+Index: syslinux/efi/main.c
+===================================================================
+--- syslinux.orig/efi/main.c
++++ syslinux/efi/main.c
+@@ -10,6 +10,7 @@
+ #include <syslinux/firmware.h>
+ #include <syslinux/linux.h>
+ #include <sys/ansi.h>
++#include <setjmp.h>
+ 
+ #include "efi.h"
+ #include "fio.h"
