@@ -1,0 +1,20 @@
+From: Tianyu Chen <sweetyfish@deepin.org>
+Date: Thu, 8 Oct 2026 15:29:10 +0800
+Subject: Fix -fcf-protection build error on i386
+
+---
+ mk/embedded.mk | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/mk/embedded.mk b/mk/embedded.mk
+index fae13e2..b9b6741 100644
+--- a/mk/embedded.mk
++++ b/mk/embedded.mk
+@@ -24,6 +24,7 @@ GCCOPT :=
+ ifeq ($(ARCH),i386)
+ 	GCCOPT := $(call gcc_ok,-m32)
+ 	GCCOPT += $(call gcc_ok,-march=i386)
++	GCCOPT    += $(call gcc_ok,-fcf-protection=none,)
+ 	GCCOPT    += $(call gcc_ok,-mpreferred-stack-boundary=2,)
+ 	GCCOPT    += $(call gcc_ok,-mincoming-stack-boundary=2,)
+ endif
