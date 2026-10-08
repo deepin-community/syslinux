@@ -7,3 +7,4 @@
 0018-prevent-pow-optimization.patch
 0019-gcc-10-compatibility.patch
 add-header_file.patch
+0010-Fix-fcf-protection-build-error-on-i386.patch
