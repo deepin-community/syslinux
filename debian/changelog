@@ -1,8 +1,9 @@
 syslinux (3:6.04~git20190206.bf6db5b4+dfsg1-deepin2) unstable; urgency=medium
 
   * Fix build error caused by -fcf-protection on i386
+  * Add wchar_t type definition for gnu-efi >= 3.0.16 compatibility
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 08 Oct 2026 15:49:55 +0800
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 08 Oct 2026 17:57:19 +0800
 
 syslinux (3:6.04~git20190206.bf6db5b4+dfsg1-deepin1) unstable; urgency=medium
 

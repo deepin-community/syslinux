@@ -8,3 +8,4 @@
 0019-gcc-10-compatibility.patch
 add-header_file.patch
 0010-Fix-fcf-protection-build-error-on-i386.patch
+0011-stddef.h-add-wchar_t-type-definition.patch
